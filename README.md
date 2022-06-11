@@ -1,1 +1,1 @@
-# rsschool-cv
+https://RegionWAR.github.io/rsschool-cv/cv
