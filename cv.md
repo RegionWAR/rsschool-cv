@@ -81,3 +81,12 @@ public class Zadanie5 {
 
 ## Experience
 **Section is under development**
+
+## Education
+* **University:** [Murmansk State Technical University](http://www.mstu.edu.ru/)
+* **Courses:**
+    * [Stepik](https://stepik.org/users/333133713?preview=true)
+    * Coursera
+    
+## English
+**A2** (Section is under development and the level is rising)
