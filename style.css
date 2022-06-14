@@ -72,9 +72,17 @@ body {
 }
 
 .nav-list a:hover {
-    color: rgb(200, 235, 121);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     font-weight: bolder;
-    background: rgba(101, 107, 109, 0.7);
+    background: rgba(30, 52, 252, 0.527);
+    transition: .3s;
+}
+
+.github:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bolder;
+    background: rgba(30, 52, 252, 0.281);
     transition: .6s;
 }
