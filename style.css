@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Abril';
+    src: url(assets/fonts/AbrilFatface-Regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Tiro-Italic';
+    src: url(assets/fonts/TiroDevanagariMarathi-Italic.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Tiro';
+    src: url(assets/fonts/TiroDevanagariMarathi-Regular.ttf);
+    font-weight: 100;
+}
+
+body {
+    font-family: Tiro, Arial, Helvetica, sans-serif;
+}
