@@ -16,6 +16,10 @@
     font-weight: 100;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Tiro, Arial, Helvetica, sans-serif;
     min-height: 100vh;
@@ -40,4 +44,37 @@ body {
 
 .footer {
     border: 1px solid red;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 30px;
+    line-height: 50px;
+    transition: .6s;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(101, 107, 109, 0.7);
+    transition: color 0.5s;
+}
+
+.nav-list a:hover {
+    color: rgb(200, 235, 121);
+    text-decoration: underline;
+    font-weight: bolder;
+    background: rgba(101, 107, 109, 0.7);
+    transition: .6s;
 }
