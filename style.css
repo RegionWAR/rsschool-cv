@@ -16,12 +16,23 @@
     font-weight: 100;
 }
 
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Tiro, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #ffffff;
+    background-color: #000000;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -35,15 +46,25 @@ body {
 }
 
 .header {
-    border: 1px solid red;
+    border: 1px solid rgb(194, 194, 194);
 }
 
 .main {
-    border: 1px solid red;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.section {
+    width: 50%;
 }
 
 .footer {
-    border: 1px solid red;
+    border: 1px solid rgb(194, 194, 194);
 }
 
 .container {
@@ -53,21 +74,25 @@ body {
 
 .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     list-style: none;
     padding: 0 30px;
     line-height: 50px;
     transition: .6s;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-list a {
     text-decoration: none;
-    color: black;
+    color: rgb(194, 194, 194);
     padding: 10px;
     font-size: 30px;
+    font-weight: bolder;
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(101, 107, 109, 0.7);
+    border: 1px solid rgba(194, 194, 194, 0.7);
     transition: color 0.5s;
 }
 
@@ -79,10 +104,32 @@ body {
     transition: .3s;
 }
 
+.github {
+    color: rgb(194, 194, 194);
+}
+
 .github:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline;
     font-weight: bolder;
     background: rgba(30, 52, 252, 0.281);
     transition: .6s;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+img {
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }

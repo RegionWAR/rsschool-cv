@@ -11,8 +11,6 @@
 </head>
 
 <body>
-    <p>Help me,please</p>
-
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -32,7 +30,7 @@
     </header>
 
     <main class="main">
-        <div class="container">
+        <div class="container main-container">
             <section class="section" id="profile">
                 <h1 class="section-title">Gorohov Mihail Aleksandrovich</h1>
             </section>
@@ -68,67 +66,14 @@
             </section>
             <section class="section" id="code">
                 <h2 class="section-title">Code</h2>
-                <p>
-                    <code>
-                        <pre>
-                            
-На вход подаётся матрица (двумерный массив). Все элементы матрицы - целые числа.
-Поверните матрицы на 90 градусов по часовой стрелке.
-
-
-import java.util.Arrays;
-
-import java.util.Scanner;
-
-public class Zadanie5 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int total = 0;                               // Переменная количества строк
-        String str = "";                             // Данный массив в 1 строке
-        int length = 0;                              // Длинна Массива
-
-        while (input.hasNext()) {                    // Считываем вводимые данные
-            str += input.nextLine() + " ";           // Записываем их в строку
-            String[] prom = str.split(" ");
-            length = prom.length;
-            total++;
-        }
-
-        String[] prom = str.split(" ");                    //Создаем строчный массив из строки
-        String[][] finArr = new String[total][length / total];     //Создаеи пустой 2 мерный массив
-        int total2 = 0;                                          //Переменная счета индекса в строчном массиве
-        for (int i = 0; i < total; i++) {                        //Цикл строки
-            for (int j = 0; j < length / total; j++) {
-                finArr[i][j] = prom[total2];
-                total2++;
-            }
-        }                                                         //создание осн массива можно было пропустить создал для наглядности
-
-        String[][] finArrV2 = new String[length / total][total];   //Создаем новый пустой массив сопоставимый перевернутому предыдущему
-        int per = length - 1;
-
-        for (int i = length / total - 1; i >= 0; i--) {     //Забиваем новый массив значениями
-            for (int j = 0; j < total; j++) {
-                int per1 = per - length / total * j;
-                finArrV2[i][j] = prom[per1];
-            }
-            per -= 1;
-        }
-
-        for (int i = 0; i < length / total; i++) {                             // Выводим масссив на печать
-            for (String s : finArrV2[i]) {
-                System.out.print(s == finArrV2[i][total - 1] ? s : s + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-                        </pre>
-                    </code>
-                </p>
+                <p>Section is under development and the level is rising</p>
             </section>
             <section class="section" id="courses">
                 <h2 class="section-title">Courses</h2>
+                <ul>
+                    <li><a class="github" href="https://stepik.org/users/333133713?preview=true">Stepik</a></li>
+                    <li>Coursera</li>
+                </ul>
             </section>
             <section class="section" id="projects">
                 <h2 class="section-title">Projects</h2>
@@ -137,12 +82,6 @@ public class Zadanie5 {
                 <h2 class="section-title">Education</h2>
                 <ul>
                     <li><b>University:</b> Murmansk State Technical University</li>
-                    <li><b>Courses:</b>
-                        <ul>
-                            <li>Stepik</li>
-                            <li>Coursera</li>
-                        </ul>
-                    </li>
                 </ul>
             </section>
             <section class="section" id="english">
