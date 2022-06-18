@@ -28,11 +28,11 @@ html {
 
 body {
     font-family: Tiro, Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 1.7;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #000000e5;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -41,16 +41,24 @@ body {
     justify-content: space-between;
 }
 
+.container-right {
+    background-color: black;
+    border-radius: 20px;
+    width: 1024px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 100px 20px rgba(194, 194, 194, 0.5);
+}
+
 * {
     box-sizing: border-box;
 }
 
 .header {
-    border: 1px solid rgb(194, 194, 194);
+    /* border: 1px solid rgb(194, 194, 194); */
 }
 
 .main {
-    border: 1px solid rgb(194, 194, 194);
+    /* border: 1px solid rgb(194, 194, 194); */
 }
 
 .main-container {
@@ -59,12 +67,49 @@ body {
     padding: 10px;
 }
 
-.section {
-    width: 50%;
+#code {
+    width: 95%;
+    background-color: rgba(31, 28, 28, 0.308);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 35px 50px 35px 25px;
+    box-shadow: 2px 2px 30px -5px rgba(255, 255, 255, 0.288);
 }
 
-.footer {
-    border: 1px solid rgb(194, 194, 194);
+#projects {
+    width: 95%;
+    background-color: rgba(31, 28, 28, 0.308);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 45px 50px 35px 25px;
+    box-shadow: 2px 2px 30px -5px rgba(255, 255, 255, 0.288);
+}
+
+#profile {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.section {
+    width: auto;
+}
+
+.left-colums {
+    width: 45%;
+    background-color: rgba(31, 28, 28, 0.308);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 0px 50px 0px 25px;
+    box-shadow: 2px 2px 30px -5px rgba(255, 255, 255, 0.288);
+}
+
+.right-colums {
+    width: 45%;
+    background-color: rgba(31, 28, 28, 0.308);
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 2px 2px 30px -5px rgba(255, 255, 255, 0.288);
 }
 
 .container {
@@ -94,6 +139,7 @@ body {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(194, 194, 194, 0.7);
     transition: color 0.5s;
+    border-radius: 50px;
 }
 
 .nav-list a:hover {
@@ -119,6 +165,7 @@ body {
 h1 {
     font-weight: bolder;
     font-size: 60px;
+    text-align: center;
 }
 
 h2 {
@@ -126,10 +173,41 @@ h2 {
     font-style: italic;
 }
 
-img {
-    border-radius: 100px;
+.my-photo {
+    border-radius: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.my-github {
+    display: flex;
+    align-items: center;
+}
+
+.github-icon {
+    height: 50px;
+}
+
+.rs-icon {
+    height: 50px;
 }
